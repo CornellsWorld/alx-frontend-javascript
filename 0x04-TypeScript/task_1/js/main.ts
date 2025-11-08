@@ -33,16 +33,16 @@ const director1: Directors = {
 };
 console.log(director1);
 
-// Define the interface for the function
 interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
 
-// Implement the function
-export const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => {
+// Named function declaration
+function printTeacher(firstName: string, lastName: string): string {
   return `${firstName.charAt(0)}. ${lastName}`;
-};
+}
 
 // Example usage
 console.log(printTeacher("John", "Doe")); // Output: J. Doe
+
 
